@@ -31,7 +31,7 @@ pipeline {
                
                sh 'ls -a'
                
-              echo "This is me"
+              echo "This is me man"
                
                sh "docker build . -t jobportalimg:${env.BUILD_ID}"
            }
