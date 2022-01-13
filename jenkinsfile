@@ -15,23 +15,14 @@ pipeline {
                 sh './vendor/bin/phpunit ./tests'
             }
         }
-       # stage("Unit test") {
-        #    steps {
-         #       sh 'php artisan test'
-          #  }
-        #}
-       # stage("Code coverage") {
-        #    steps {
-         #       sh './vendor/bin/phpunit ./tests'
-          #  }
-        #}
+       
      stage('Build docker image'){
            steps{
                sh 'pwd'
                
                sh 'ls -a'
                
-              echo "This is me man and you are great"
+              echo "This is me man and you are great are you okay"
                
                sh "docker build . -t jobportalimg:${env.BUILD_ID}"
            }
